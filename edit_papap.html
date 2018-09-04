@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>CMS - Butterfly</title>
+		<!-- Tell the browser to be responsive to screen width -->
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<link rel="icon" href="img/favicon.png" type="image/png">
+		<!-- Bootstrap 3.3.5 -->
+		<link rel="stylesheet" href="app/plugins/bootstrap/css/bootstrap.min.css">
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<!-- Add fancyBox -->
+		<link rel="stylesheet" href="app/plugins/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<!-- liTranslit -->
+		<link rel="stylesheet" href="app/plugins/liTranslit/css/liCover.css">
+		<!-- Theme style -->
+		<link rel="stylesheet" href="app/css/style.css">
+		<link rel="stylesheet" href="app/css/media.css">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 col-xs-12">
+			<form action="#" method="post" class="page_form">
+				<div class="hidden_bottom_form_event align_div_right">
+					<button type="button" class="btn btn-page_form_add">Додати</button>
+					<button type="button" class="btn btn-page_form">Зберегти</button>
+					<button type="button" class="btn btn-page_form">Переглянути</button>
+					<button type="button" class="btn btn-danger">Видалити</button>
+				</div>
+				<div class="row">
+				<div class="col-md-9 col-xs-12">
+					<label for="title">Заголовк*</label>
+					<input type="text" name="title" id="title" value="" required />
+					<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+				</div>
+				<div class="col-md-3 col-xs-12">
+					<label for="parents_page">Родительская страница</label>
+					<select name="parents_page" id="parents_page">
+						<option value="index">Головна</option>
+						<option value="static">Статична</option>
+						<option value="dinamic">Динамічна</option>
+					</select>
+					<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+				</div>
+				</div>
+				<div class="row">
+				<div class="col-md-9 col-xs-12">
+					<label for="longtitle">Расширенный заголовок</label>
+					<input type="text" name="longtitle" id="longtitle" value="" />
+					<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+				</div>
+				<div class="col-md-3 col-xs-12">
+					<label for="alias">Псевдоним</label>
+					<input type="text" name="alias" id="alias" value="" />
+					<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+				</div>
+				</div>
+				<div class="row">
+				<div class="col-md-9 col-xs-12">
+					<label for="name">Описание</label>
+					<textarea name="description" id="description"></textarea>
+					<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+				</div>
+				<div class="col-md-3 col-xs-12">
+					<label for="menutitle">Пункт меню</label>
+					<input type="text" name="menutitle" id="menutitle" value="" />
+					<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+				</div>
+				</div>
+				<div class="row">
+				<div class="col-md-9 col-xs-12">
+					<label for="keywords">Ключевие слова</label>
+					<input type="text" name="keywords" id="keywords" value="" />
+					<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+				</div>
+				<div class="col-md-3 col-xs-12">
+					<label for="link_attributes">Атрибуты ссылки</label>
+					<input type="text" name="link_attributes" id="link_attributes" value="" />
+					<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+				</div>
+				</div>
+				<div class="row">
+				<div class="col-md-9 col-xs-12">
+					<label for="introtext">Аннотация (введение)</label>
+					<textarea name="introtext" id="introtext"></textarea>
+					<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+				</div>
+				<div class="col-md-3 col-xs-12">
+					<br />
+					<input type="checkbox" autocomplete="off" id="hidemenu" name="hidemenu" value="1">
+					<label for="hidemenu" class="label_hidemenu">Не показывать в меню</label>
+					<br />
+					<input type="checkbox" autocomplete="off" id="public_page" name="public_page" value="1">
+					<label for="public_page" class="label_hidemenu">Опубликован</label>
+				</div>
+				</div>
+				<div class="row">
+				<div class="col-md-12 col-xs-12">
+					<label for="content">Содержимое</label>
+					<textarea name="content" id="content" class="textarea_content"></textarea>
+					<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+				</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- jQuery 3.1.0 -->
+<script src="app/plugins/jQuery/jquery-3.1.0.min.js"></script>
+<!-- Bootstrap 3.3.5 -->
+<script src="app/plugins/bootstrap/js/bootstrap.min.js"></script>
+<!-- Add fancyBox -->
+<script type="text/javascript" src="app/plugins/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<!-- liTranslit -->
+<script src="app/plugins/liTranslit/js/jquery.liTranslit.js"></script>
+<!-- Code.jquery -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!-- App -->
+<script src="app/js/app.js"></script>
+</body>
+</html>
